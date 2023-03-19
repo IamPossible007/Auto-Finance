@@ -31,7 +31,7 @@ const useStyles = createStyles((theme) => ({
 export function FAQ() {
   const { classes } = useStyles();
   return (
-    <Container size='sm' className={classes.wrapper}>
+    <Container size='md' className={classes.wrapper}>
       <Title align='center' className={classes.title}>
         Frequently Asked Questions
       </Title>

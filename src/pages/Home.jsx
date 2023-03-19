@@ -1,3 +1,4 @@
+import { GetInTouch } from "../components/contact/GetInTouch";
 import { FAQ } from "../components/faq/FAQ";
 import { FeaturesCards } from "../components/features/FeaturesCards";
 import { FooterSocial } from "../components/footer/FooterSocial";
@@ -9,6 +10,7 @@ function Home() {
       <HeroBullets />
       <FeaturesCards />
       <FAQ />
+      <GetInTouch />
       <FooterSocial />
     </div>
   );
