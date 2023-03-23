@@ -10,7 +10,7 @@ import {
   rem,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { IconBuildingBank } from "@tabler/icons-react";
+import Logo from "../../assets/images/logo.png";
 
 const HEADER_HEIGHT = rem(60);
 
@@ -18,6 +18,10 @@ const useStyles = createStyles((theme) => ({
   root: {
     position: "relative",
     zIndex: 1,
+
+    [theme.fn.smallerThan("md")]: {
+      marginBottom: "8px !important",
+    },
   },
 
   dropdown: {
@@ -34,6 +38,19 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.largerThan("sm")]: {
       display: "none",
     },
+  },
+
+  logo: {
+    height: "36px",
+  },
+
+  name: {
+    marginLeft: "8px",
+  },
+
+  title: {
+    display: "flex",
+    alignItems: "center",
   },
 
   header: {
@@ -135,7 +152,10 @@ export function TopNavbar() {
   return (
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
       <Container className={classes.header}>
-        <IconBuildingBank size={28} />
+        <div className={classes.title}>
+          <img className={classes.logo} src={Logo} alt='logo' />
+          <h1 className={classes.name}>Auto Finance</h1>
+        </div>
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>

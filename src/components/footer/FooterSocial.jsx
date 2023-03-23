@@ -10,7 +10,7 @@ import {
   IconBrandYoutube,
   IconBrandInstagram,
 } from "@tabler/icons-react";
-import { IconBuildingBank } from "@tabler/icons-react";
+import Logo from "../../assets/images/logo.png";
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -34,6 +34,10 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
+  logo: {
+    height: "36px",
+  },
+
   links: {
     [theme.fn.smallerThan("xs")]: {
       marginTop: theme.spacing.md,
@@ -47,7 +51,7 @@ export function FooterSocial() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <IconBuildingBank size={28} />
+        <img className={classes.logo} src={Logo} alt="logo" />
         <Group
           spacing={0}
           className={classes.links}
