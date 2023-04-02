@@ -11,6 +11,7 @@ import {
   IconBrandInstagram,
 } from "@tabler/icons-react";
 import Logo from "../../assets/images/logo.png";
+import { ToggleTheme } from "../theme/ToggleTheme";
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -51,7 +52,7 @@ export function FooterSocial() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <img className={classes.logo} src={Logo} alt="logo" />
+        <img className={classes.logo} src={Logo} alt='logo' />
         <Group
           spacing={0}
           className={classes.links}
@@ -68,6 +69,7 @@ export function FooterSocial() {
             <IconBrandInstagram size='1.05rem' stroke={1.5} />
           </ActionIcon>
         </Group>
+        <ToggleTheme />
       </Container>
     </div>
   );

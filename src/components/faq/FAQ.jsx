@@ -14,12 +14,14 @@ const useStyles = createStyles((theme) => ({
   },
 
   title: {
+    color: theme.colorScheme === "dark" ? theme.white : theme.black,
     marginBottom: `calc(${theme.spacing.xl} * 1.5)`,
   },
 
   item: {
     borderRadius: theme.radius.md,
     marginBottom: theme.spacing.lg,
+    color: theme.colorScheme === "dark" && theme.colors.gray[3],
     border: `${rem(1)} solid ${
       theme.colorScheme === "dark"
         ? theme.colors.dark[4]

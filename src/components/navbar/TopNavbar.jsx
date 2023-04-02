@@ -45,10 +45,13 @@ const useStyles = createStyles((theme) => ({
   },
 
   name: {
-    marginLeft: "8px",
+    marginLeft: "12px",
+    fontSize: rem(24),
   },
 
   title: {
+    color:
+      theme.colorScheme === "dark" ? theme.colors.gray[3] : theme.black,
     display: "flex",
     alignItems: "center",
   },

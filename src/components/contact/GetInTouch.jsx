@@ -90,6 +90,7 @@ const useStyles = createStyles((theme) => {
     },
 
     title: {
+      color: theme.colorScheme === "dark" && theme.colors.gray[3],
       marginBottom: `calc(${theme.spacing.xl} * 1.5)`,
       fontFamily: `Greycliff CF, ${theme.fontFamily}`,
 

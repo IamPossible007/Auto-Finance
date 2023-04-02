@@ -58,6 +58,7 @@ const featureList = [
 
 const useStyles = createStyles((theme) => ({
   title: {
+    color: theme.colorScheme === "dark" ? theme.colors.gray[3] : theme.black,
     fontSize: rem(34),
     fontWeight: 900,
 
