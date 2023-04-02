@@ -17,8 +17,12 @@ const useStyles = createStyles((theme) => ({
   inner: {
     display: "flex",
     justifyContent: "space-between",
-    paddingTop: `calc(${theme.spacing.xl} * 4)`,
+    paddingTop: `calc(${theme.spacing.xl})`,
     paddingBottom: `calc(${theme.spacing.xl} * 4)`,
+
+    [theme.fn.smallerThan("md")]: {
+      flexDirection: "column-reverse",
+    },
   },
 
   content: {
@@ -50,10 +54,11 @@ const useStyles = createStyles((theme) => ({
   },
 
   image: {
-    flex: 1,
-
     [theme.fn.smallerThan("md")]: {
-      display: "none",
+      margin: "0 auto",
+      maxWidth: "28rem",
+      padding: `${theme.spacing.xl} ${theme.spacing.xl}`,
+      marginBottom: `${theme.spacing.xl}`,
     },
   },
 
