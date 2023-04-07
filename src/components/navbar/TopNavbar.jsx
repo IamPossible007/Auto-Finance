@@ -11,6 +11,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import Logo from "../../assets/images/logo.png";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const HEADER_HEIGHT = rem(60);
 
@@ -131,8 +132,10 @@ const links = [
 ];
 
 export function TopNavbar() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [opened, { toggle, close }] = useDisclosure(false);
-  const [active, setActive] = useState(links[0].link);
+  const [active, setActive] = useState(location.pathname);
   const { classes, cx } = useStyles();
 
   const items = links.map((link) => (
@@ -145,6 +148,7 @@ export function TopNavbar() {
       onClick={(event) => {
         event.preventDefault();
         setActive(link.link);
+        navigate(link.link);
         close();
       }}
     >
