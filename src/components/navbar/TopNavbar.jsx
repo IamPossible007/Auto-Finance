@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   createStyles,
   Header,
@@ -137,6 +137,10 @@ export function TopNavbar() {
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(location.pathname);
   const { classes, cx } = useStyles();
+
+  useEffect(() => {
+    setActive(location.pathname);
+  }, [location.pathname]);
 
   const items = links.map((link) => (
     <a
