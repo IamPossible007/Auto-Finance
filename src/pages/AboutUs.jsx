@@ -1,4 +1,5 @@
 import { Container } from "@mantine/core";
+import { GetInTouch } from "../components/contact/GetInTouch";
 import { FeaturesIcons } from "../components/features/FeaturesIcons";
 
 function About() {
@@ -7,6 +8,7 @@ function About() {
       <Container my='md'>
         <FeaturesIcons />
       </Container>
+      <GetInTouch />
     </div>
   );
 }

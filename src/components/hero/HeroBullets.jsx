@@ -11,7 +11,7 @@ import {
   rem,
 } from "@mantine/core";
 import { IconCheck } from "@tabler/icons-react";
-import BannerImage from "../../assets/images/banner.svg";
+import BannerImage from "../../assets/images/banner.png";
 
 const useStyles = createStyles((theme) => ({
   inner: {
@@ -57,7 +57,6 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan("md")]: {
       margin: "0 auto",
       maxWidth: "28rem",
-      padding: `${theme.spacing.xl} ${theme.spacing.xl}`,
       marginBottom: `${theme.spacing.xl}`,
     },
   },

@@ -1,4 +1,5 @@
 import { Container } from "@mantine/core";
+import { Comments } from "../components/comments/Comments";
 import { CardsCarousel } from "../components/carousel/CardsCarousel";
 import { HeroText } from "../components/hero/HeroText";
 
@@ -9,6 +10,7 @@ function Loans() {
       <Container my='md'>
         <CardsCarousel />
       </Container>
+      <Comments />
     </div>
   );
 }

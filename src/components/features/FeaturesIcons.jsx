@@ -67,7 +67,7 @@ export function FeaturesIcons() {
         size={44}
         radius='md'
         variant='gradient'
-        gradient={{ deg: 133, from: "blue", to: "cyan" }}
+        gradient={{ deg: 133, from: "blue", to: "#1864ab" }}
       >
         <feature.icon size={rem(26)} stroke={1.5} />
       </ThemeIcon>
@@ -95,7 +95,7 @@ export function FeaturesIcons() {
 
           <Button
             variant='gradient'
-            gradient={{ deg: 133, from: "blue", to: "cyan" }}
+            gradient={{ deg: 133, from: "blue", to: "#1864ab" }}
             size='lg'
             radius='md'
             mt='xl'
