@@ -1,10 +1,10 @@
-# Auto Finance
+# Auto Finance 💰🚗
 
 > This is a static website built for learning purposes, focusing on finance domain. It showcases various features and information related to auto financing.
 
-Demo : https://autofinance.vercel.app/
+Demo : [Auto Finance Demo](https://autofinance.vercel.app/)
 
-## Technologies Used
+## Technologies Used 🛠️
 
 The project utilizes the following technologies:
 
@@ -12,7 +12,7 @@ The project utilizes the following technologies:
 - **Mantine UI**: A modern React component library with a set of customizable and accessible UI components.
 - **Vercel**: A cloud platform for static site deployment and hosting.
 
-## Getting Started
+## Getting Started 🚀
 
 1. Clone the project:
 ```
@@ -34,8 +34,8 @@ npm install
 npm run dev
 ```
 
-## Contributing
+## Contributing 🤝
 Contributions to this project are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the project's GitHub repository.
 
-## License
+## License 📝
 This project is licensed under the [MIT License](https://github.com/SSK-14/Auto-Finance/blob/main/LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
