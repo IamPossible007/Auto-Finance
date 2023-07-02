@@ -128,7 +128,7 @@ export function FeaturesCards() {
   ));
 
   return (
-    <Container size='lg' py='xl'>
+    <Container size='md' py='lg'>
       <Group position='center'>
         <Badge variant='filled' size='lg'>
           Why Choose Us
