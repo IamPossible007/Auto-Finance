@@ -5,38 +5,32 @@ import ImageCard from "../card/ImageCard";
 
 const data = [
   {
-    image:
-      "src/assets/images/image-1.jpeg",
+    image: "cards/image-1.jpeg",
     title: "Flexible financing options for your new car",
     category: "New Car Loans",
   },
   {
-    image:
-      "src/assets/images/image-2.jpeg",
+    image: "cards/image-2.jpeg",
     title: "Affordable financing for a reliable used car",
     category: "Used Car Loans",
   },
   {
-    image:
-      "src/assets/images/image-5.png",
+    image: "cards/image-5.png",
     title: "Lower your monthly payments with our refinancing options",
     category: "Refinancing Loans",
   },
   {
-    image:
-      "src/assets/images/image-3.png",
+    image: "cards/image-3.png",
     title: "Flexible financing options for lease buyouts",
     category: "Lease Buyout Loans",
   },
   {
-    image:
-      "src/assets/images/image-4.png",
+    image: "cards/image-4.png",
     title: "Financing options for private car sales",
     category: "Private Party Loans",
   },
   {
-    image:
-      "src/assets/images/image-6.png",
+    image: "cards/image-6.png",
     title: "We believe everyone deserves a chance to finance a car",
     category: "Bad Credit Loans",
   },
