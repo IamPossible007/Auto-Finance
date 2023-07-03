@@ -4,6 +4,9 @@
 
 Demo : [Auto Finance Demo](https://autofinance.vercel.app/)
 
+<img width="400" alt="demo home page" src="https://github.com/SSK-14/Auto-Finance/assets/45158568/ee8f97b0-71ef-4741-b65a-b1b8b2ff1085">
+
+
 ## Technologies Used 🛠️
 
 The project utilizes the following technologies:
