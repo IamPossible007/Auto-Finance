@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { MantineProvider, ColorSchemeProvider } from "@mantine/core";
+import { MantineProvider, ColorSchemeProvider } from "@mantine/core"; 
+import { Notifications } from '@mantine/notifications';
 import SearchSpotlight from "../spotlight/SearchSpotlight";
 
 export function MantineTheme({ children }) {
@@ -17,6 +18,7 @@ export function MantineTheme({ children }) {
         withGlobalStyles
         withNormalizeCSS
       >
+        <Notifications />
         <SearchSpotlight>{children}</SearchSpotlight>
       </MantineProvider>
     </ColorSchemeProvider>

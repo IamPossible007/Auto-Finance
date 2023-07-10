@@ -21,7 +21,7 @@ const useStyles = createStyles((theme) => ({
     color:
       theme.colorScheme === "dark" ? theme.colors.gray[3] : theme.black,
     fontSize: rem(34),
-    fontWeight: 900,
+    fontWeight: 700,
     marginTop: theme.spacing.xl,
     marginBottom: theme.spacing.lg,
 
@@ -70,7 +70,7 @@ export function Comments() {
   return (
     <Container size='md' py='xl' shadow='md' radius='lg'>
       <Title align='center' className={classes.title}>
-        Customer Feedback
+        What Our Customers Say
       </Title>
       {comments.map(({ author, body, postedAt }) => (
         <Paper withBorder radius='md' className={classes.comment}>

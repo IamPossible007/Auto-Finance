@@ -15,6 +15,7 @@ import {
   IconHeadset,
   IconAdjustmentsAlt,
 } from "@tabler/icons-react";
+import { useNavigate } from "react-router-dom";
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -60,6 +61,7 @@ const features = [
 
 export function FeaturesIcons() {
   const { classes } = useStyles();
+  const navigate = useNavigate();
 
   const items = features.map((feature) => (
     <div key={feature.title}>
@@ -96,6 +98,7 @@ export function FeaturesIcons() {
           <Button
             variant='gradient'
             gradient={{ deg: 133, from: "blue", to: "#1864ab" }}
+            onClick={() => navigate("/loans")}
             size='lg'
             radius='md'
             mt='xl'

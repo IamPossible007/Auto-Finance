@@ -35,7 +35,6 @@ function SearchSpotlight({ children }) {
       actions={actions}
       searchIcon={<IconSearch size='1.2rem' />}
       searchPlaceholder='Search...'
-      shortcut='mod + shift + 1'
       nothingFoundMessage='Nothing found...'
     >
       {children}

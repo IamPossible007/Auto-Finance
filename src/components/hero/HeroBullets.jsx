@@ -12,6 +12,7 @@ import {
 } from "@mantine/core";
 import { IconCheck } from "@tabler/icons-react";
 import BannerImage from "../../assets/images/banner.png";
+import { useNavigate } from "react-router-dom";
 
 const useStyles = createStyles((theme) => ({
   inner: {
@@ -74,6 +75,8 @@ const useStyles = createStyles((theme) => ({
 
 export function HeroBullets() {
   const { classes } = useStyles();
+  const navigate = useNavigate();
+
   return (
     <div>
       <Container>
@@ -113,7 +116,12 @@ export function HeroBullets() {
             </List>
 
             <Group mt={30}>
-              <Button radius='xl' size='md' className={classes.control}>
+              <Button
+                radius='xl'
+                size='md'
+                className={classes.control}
+                onClick={() => navigate("/loans")}
+              >
                 Instant Loans
               </Button>
               <Button
@@ -121,6 +129,7 @@ export function HeroBullets() {
                 radius='xl'
                 size='md'
                 className={classes.control}
+                onClick={() => navigate("/about")}
               >
                 Enquire now
               </Button>

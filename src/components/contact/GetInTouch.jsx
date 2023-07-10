@@ -10,7 +10,9 @@ import {
   rem,
   Container,
 } from "@mantine/core";
+import { notifications } from "@mantine/notifications";
 import { ContactIconsList } from "./ContactIcons";
+import { IconCheck } from "@tabler/icons-react";
 import bg from "../../assets/images/wave.svg";
 
 const useStyles = createStyles((theme) => {
@@ -110,6 +112,17 @@ const useStyles = createStyles((theme) => {
 export function GetInTouch() {
   const { classes } = useStyles();
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    event.target.reset();
+    notifications.show({
+      color: "teal",
+      icon: <IconCheck />,
+      title: "Mail notification",
+      message: "Hey, please check your mail",
+    });
+  };
+
   return (
     <Container size='md' py='xl' shadow='md' radius='lg'>
       <div className={classes.wrapper}>
@@ -121,10 +134,7 @@ export function GetInTouch() {
           <ContactIconsList variant='white' />
         </div>
 
-        <form
-          className={classes.form}
-          onSubmit={(event) => event.preventDefault()}
-        >
+        <form className={classes.form} onSubmit={handleSubmit}>
           <Text fz='lg' fw={700} className={classes.title}>
             Get in touch
           </Text>
