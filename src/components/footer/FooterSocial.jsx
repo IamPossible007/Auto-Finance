@@ -1,8 +1,9 @@
 import {
   createStyles,
-  Container,
+  Anchor,
   Group,
   ActionIcon,
+  Container,
   rem,
 } from "@mantine/core";
 import {
@@ -11,7 +12,6 @@ import {
   IconBrandInstagram,
 } from "@tabler/icons-react";
 import Logo from "../../assets/images/logo.png";
-import { ToggleTheme } from "../theme/ToggleTheme";
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -27,10 +27,9 @@ const useStyles = createStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingTop: theme.spacing.xl,
-    paddingBottom: theme.spacing.xl,
+    padding: `${theme.spacing.md} ${theme.spacing.md}`,
 
-    [theme.fn.smallerThan("xs")]: {
+    [theme.fn.smallerThan("sm")]: {
       flexDirection: "column",
     },
   },
@@ -40,36 +39,69 @@ const useStyles = createStyles((theme) => ({
   },
 
   links: {
-    [theme.fn.smallerThan("xs")]: {
-      marginTop: theme.spacing.md,
+    [theme.fn.smallerThan("sm")]: {
+      marginTop: theme.spacing.lg,
+      marginBottom: theme.spacing.sm,
     },
   },
 }));
 
+const links = [
+  {
+    link: "#",
+    label: "Contact",
+  },
+  {
+    link: "#",
+    label: "Privacy",
+  },
+  {
+    link: "#",
+    label: "Blog",
+  },
+  {
+    link: "#",
+    label: "Store",
+  },
+  {
+    link: "#",
+    label: "Careers",
+  },
+];
+
 export function FooterSocial() {
   const { classes } = useStyles();
+  const items = links.map((link) => (
+    <Anchor
+      color='dimmed'
+      key={link.label}
+      href={link.link}
+      sx={{ lineHeight: 1 }}
+      onClick={(event) => event.preventDefault()}
+      size='sm'
+    >
+      {link.label}
+    </Anchor>
+  ));
 
   return (
     <div className={classes.footer}>
-      <Container className={classes.inner}>
+      <Container size='lg' className={classes.inner}>
         <img className={classes.logo} src={Logo} alt='logo' />
-        <Group
-          spacing={0}
-          className={classes.links}
-          position='right'
-          noWrap
-        >
-          <ActionIcon size='lg'>
+
+        <Group className={classes.links}>{items}</Group>
+
+        <Group spacing='xs' position='right' noWrap>
+          <ActionIcon size='lg' variant='default' radius='xl'>
             <IconBrandTwitter size='1.05rem' stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size='lg'>
+          <ActionIcon size='lg' variant='default' radius='xl'>
             <IconBrandYoutube size='1.05rem' stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size='lg'>
+          <ActionIcon size='lg' variant='default' radius='xl'>
             <IconBrandInstagram size='1.05rem' stroke={1.5} />
           </ActionIcon>
         </Group>
-        <ToggleTheme />
       </Container>
     </div>
   );

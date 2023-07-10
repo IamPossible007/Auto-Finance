@@ -7,8 +7,13 @@ import {
   Burger,
   Paper,
   Transition,
+  Button,
   rem,
 } from "@mantine/core";
+import { useMantineColorScheme, ActionIcon } from "@mantine/core";
+import { IconSun, IconMoonStars } from "@tabler/icons-react";
+import { IconSearch } from "@tabler/icons-react";
+import { useSpotlight } from "@mantine/spotlight";
 import { useDisclosure } from "@mantine/hooks";
 import Logo from "../../assets/images/logo.png";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -114,6 +119,33 @@ const useStyles = createStyles((theme) => ({
       }).color,
     },
   },
+
+  search: {
+    display: "flex",
+    alignItems: "center",
+    borderRadius: theme.radius.lg,
+    backgroundColor:
+      theme.colorScheme === "dark"
+        ? theme.colors.dark[4]
+        : theme.colors.gray[0],
+    color:
+      theme.colorScheme === "dark" ? theme.colors.dark[0] : theme.black,
+    border: `1px solid ${
+      theme.colorScheme === "dark"
+        ? theme.colors.dark[4]
+        : theme.colors.gray[2]
+    }`,
+
+    [theme.fn.smallerThan("sm")]: {
+      display: "none",
+    },
+  },
+
+  toggleTheme: {
+    [theme.fn.smallerThan("sm")]: {
+      display: "none",
+    },
+  },
 }));
 
 const links = [
@@ -133,8 +165,11 @@ const links = [
 
 export function TopNavbar() {
   const navigate = useNavigate();
+  const spotlight = useSpotlight();
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const location = useLocation();
   const [opened, { toggle, close }] = useDisclosure(false);
+
   const [active, setActive] = useState(location.pathname);
   const { classes, cx } = useStyles();
 
@@ -162,13 +197,44 @@ export function TopNavbar() {
 
   return (
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
-      <Container className={classes.header}>
+      <Container size='lg' className={classes.header}>
         <div className={classes.title}>
           <img className={classes.logo} src={Logo} alt='logo' />
           <h1 className={classes.name}>Auto Finance</h1>
         </div>
-        <Group spacing={5} className={classes.links}>
-          {items}
+        <Group>
+          <Group spacing={5} className={classes.links}>
+            {items}
+          </Group>
+          <Button
+            className={classes.search}
+            leftIcon={<IconSearch size='1rem' stroke={1.5} />}
+            onClick={() => spotlight.openSpotlight()}
+            variant='white'
+          >
+            Search
+          </Button>
+          <ActionIcon
+            onClick={() => toggleColorScheme()}
+            className={classes.toggleTheme}
+            size='lg'
+            sx={(theme) => ({
+              backgroundColor:
+                theme.colorScheme === "dark"
+                  ? theme.colors.dark[6]
+                  : theme.colors.gray[0],
+              color:
+                theme.colorScheme === "dark"
+                  ? theme.colors.yellow[4]
+                  : theme.colors.blue[6],
+            })}
+          >
+            {colorScheme === "dark" ? (
+              <IconSun size='1.2rem' />
+            ) : (
+              <IconMoonStars size='1.2rem' />
+            )}
+          </ActionIcon>
         </Group>
 
         <Burger
@@ -177,7 +243,6 @@ export function TopNavbar() {
           className={classes.burger}
           size='sm'
         />
-
         <Transition
           transition='pop-top-right'
           duration={200}
