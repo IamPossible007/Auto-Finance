@@ -4,7 +4,8 @@
 
 Demo : [Auto Finance Demo](https://autofinance.vercel.app/)
 
-![auto-finance](https://github.com/SSK-14/Auto-Finance/assets/45158568/771d421d-5406-4070-a55d-68becff71a66)
+![auto-finance](https://github.com/SSK-14/Auto-Finance/assets/45158568/e0fcfc07-be67-43e4-a165-d9dd25aa5641)
+
 
 ## Technologies Used 🛠️
 
