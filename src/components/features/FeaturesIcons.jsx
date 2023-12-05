@@ -35,27 +35,29 @@ const useStyles = createStyles((theme) => ({
 const features = [
   {
     icon: IconPuzzle,
-    title: "Empowerment",
+    title: "Engaging Content",
     description:
-      "We empower our customers with flexible and affordable auto financing solutions.",
-  },
+    "Explore a diverse range of courses with engaging content, covering various subjects and skill levels.",},
+
   {
     icon: IconHeadset,
-    title: "Customer Service",
+    title: "Expert Support",
     description:
-      "We are committed to delivering exceptional customer service to ensure our customers have the best experience.",
+      "Benefit from our commitment to providing expert support, ensuring an enriching learning experience with guidance whenever needed.",
   },
   {
     icon: IconAdjustmentsAlt,
-    title: "Unique Needs",
+    title: "Tailored Learning Experiences",
     description:
-      "We understand that every customer has unique needs, and we provide customized solutions to meet those needs.",
+      "Recognizing the uniqueness of every learner, we offer tailored learning experiences designed to meet individual needs.",
   },
+
   {
     icon: IconBook,
-    title: "Transparency",
+    title: "Transparent Learning Environment",
+
     description:
-      "We are transparent in everything we do, providing honest and straightforward information to our customers.",
+      "We are committed to transparency, providing clear and honest information to create a straightforward learning environment for all students.",
   },
 ];
 
@@ -86,14 +88,13 @@ export function FeaturesIcons() {
     <div className={classes.wrapper}>
       <Grid gutter={80}>
         <Col span={12} md={5}>
-          <Title className={classes.title} order={2}>
-            Driving Your Dreams Forward
-          </Title>
-          <Text c='dimmed'>
-            Our mission is to empower our customers with flexible and
-            affordable auto financing solutions that fit their unique
-            needs, backed by exceptional customer service.
-          </Text>
+        <Title className={classes.title} order={2}>
+  Unlock Your Learning Potential
+</Title>
+<Text c='dimmed'>
+  Our mission is to empower learners with diverse, engaging courses and personalized learning experiences, backed by exceptional support.
+</Text>
+
 
           <Button
             variant='gradient'
@@ -103,7 +104,7 @@ export function FeaturesIcons() {
             radius='md'
             mt='xl'
           >
-            Get Loans
+            Buy courses
           </Button>
         </Col>
         <Col span={12} md={7}>

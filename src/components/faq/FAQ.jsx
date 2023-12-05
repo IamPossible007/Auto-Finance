@@ -40,37 +40,31 @@ export function FAQ() {
 
       <Accordion variant='separated'>
         <Accordion.Item className={classes.item} value='reset-password'>
-          <Accordion.Control>How do I apply for a loan?</Accordion.Control>
+          <Accordion.Control>How do I enroll in a course?</Accordion.Control>
           <Accordion.Panel>
-            You can apply for a loan online or visit one of our branches to
-            complete your application. Our application process is simple
-            and easy to follow.
+          You can enroll in courses online or visit one of our learning centers to complete your registration. Our enrollment process is simple and easy to follow.
+
           </Accordion.Panel>
         </Accordion.Item>
 
         <Accordion.Item className={classes.item} value='another-account'>
-          <Accordion.Control>
-            How long does it take to get approved for a loan?
-          </Accordion.Control>
-          <Accordion.Panel>
-            Our fast approval process means that you can get approved for a
-            loan in as little as 24 hours. We understand that our customers
-            need quick access to funds, and we work hard to make that
-            happen.
-          </Accordion.Panel>
+        <Accordion.Control>
+  How quickly can I start my course after enrolling?
+</Accordion.Control>
+<Accordion.Panel>
+  Our efficient enrollment process means that you can start your course in as little as 24 hours. We understand that our learners are eager to begin their educational journey, and we work hard to make that happen.
+</Accordion.Panel>
+
         </Accordion.Item>
 
         <Accordion.Item className={classes.item} value='newsletter'>
-          <Accordion.Control>
-            What happens if I can't make my payments?
-          </Accordion.Control>
-          <Accordion.Panel>
-            We understand that unexpected circumstances can arise, and
-            we're here to help. If you're having trouble making your
-            payments, please contact our customer service team as soon as
-            possible. We may be able to work out a payment plan or offer
-            other solutions to help you get back on track.
-          </Accordion.Panel>
+        <Accordion.Control>
+  What if I face challenges in keeping up with my course payments?
+</Accordion.Control>
+<Accordion.Panel>
+  We understand that unexpected situations can happen, and we're here to support you. If you're facing challenges in making your course payments, please reach out to our support team as soon as possible. We may be able to explore alternative solutions or work out a plan to help you continue your learning journey.
+</Accordion.Panel>
+
         </Accordion.Item>
       </Accordion>
     </Container>

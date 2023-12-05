@@ -155,7 +155,11 @@ const links = [
   },
   {
     link: "/loans",
-    label: "Loans",
+    label: "Courses",
+  },
+  {
+    link: "/login",
+    label: "Login",
   },
   {
     link: "/about",
@@ -200,7 +204,7 @@ export function TopNavbar() {
       <Container size='lg' className={classes.header}>
         <div className={classes.title}>
           <img className={classes.logo} src={Logo} alt='logo' />
-          <h1 className={classes.name}>Auto Finance</h1>
+          <h1 className={classes.name}>E LEARNING</h1>
         </div>
         <Group>
           <Group spacing={5} className={classes.links}>

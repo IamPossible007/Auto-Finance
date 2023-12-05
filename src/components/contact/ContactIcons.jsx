@@ -75,16 +75,16 @@ function ContactIcon({
 }
 
 const MOCKDATA = [
-  { title: "Email", description: "hello@finance.auto", icon: IconAt },
-  { title: "Phone", description: "+91 987654321", icon: IconPhone },
+  { title: "Email", description: "sampleMiniProject@we.com", icon: IconAt },
+  { title: "Phone", description: "+91 363936293", icon: IconPhone },
   {
     title: "Address",
-    description: "844 Tech park,chennai",
+    description: "D.J.Sanghvi",
     icon: IconMapPin,
   },
   {
     title: "Working hours",
-    description: "10 a.m. – 9 p.m.",
+    description: "10 a.m. - 9 p.m.",
     icon: IconSun,
   },
 ];

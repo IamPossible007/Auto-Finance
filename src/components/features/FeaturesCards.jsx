@@ -20,41 +20,42 @@ import {
 
 const featureList = [
   {
-    title: "Flexible Payment Options",
+    title: "Comprehensive Course Catalog",
     description:
-      "Customers can choose a repayment plan that suits their budget and lifestyle. ",
-    icon: IconPigMoney,
+      "Explore a diverse catalog of courses covering a wide range of subjects and skill levels.",
+    icon: IconPigMoney, // Replace with an icon representing video content
   },
   {
-    title: "Low Interest Rates",
+    title: "Interactive Learning Materials",
     description:
-      "Our competitive interest rates help customers save money on their loans.",
-    icon: IconPremiumRights,
+      "Engage with interactive content, including quizzes, assignments, and hands-on projects.",
+    icon: IconPremiumRights, // Replace with an icon representing educational materials
   },
   {
-    title: "Fast Approval Process",
-    description: "Get approved for a loan in as little as 24 hours.",
-    icon: Icon24Hours,
+    title: "Flexible Learning Schedule",
+    description: "Learn at your own pace with 24/7 access to course materials.",
+    icon: Icon24Hours, // Replace with an icon representing a clock or time
   },
   {
-    title: "No Hidden Fees",
+    title: "Engage in Collaborative Discussions",
     description:
-      "We believe in transparency and honesty, so there are no hidden fees or charges.",
-    icon: IconZoomCheck,
+      "Connect with fellow learners through discussion forums and collaborative learning communities.",
+    icon: IconZoomCheck, // Replace with an icon representing discussions or community
   },
   {
-    title: "No Prepayment Penalty",
+    title: "Assessment and Progress Tracking",
     description:
-      "Customers can pay off their loans early without any penalty fees.",
-    icon: IconThumbUp,
+      "Evaluate your knowledge with regular assessments and track your progress throughout the courses.",
+    icon: IconThumbUp, // Replace with an icon representing quizzes or assessments
   },
   {
-    title: "Excellent Customer Service",
+    title: "Responsive Customer Support",
     description:
-      "Our friendly and knowledgeable team is always ready to help customers with any questions or concerns.",
-    icon: IconHeadset,
+      "Our dedicated support team is ready to assist you with any questions or concerns about your learning journey.",
+    icon: IconHeadset, // Replace with an icon representing customer support
   },
 ];
+
 
 const useStyles = createStyles((theme) => ({
   title: {

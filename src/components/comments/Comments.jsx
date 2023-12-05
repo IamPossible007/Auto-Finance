@@ -46,18 +46,28 @@ const useStyles = createStyles((theme) => ({
 const comments = [
   {
     postedAt: "2 days ago",
-    body: "<p>I had a fantastic experience with the auto finance services provided. The team was professional, efficient, and helped me secure the best loan options tailored to my needs. </p>",
+    body: "<p>I had a fantastic experience exploring the courses on this e-learning platform. The team was professional, efficient, and helped me discover the best learning options tailored to my needs. </p>",
     author: {
-      name: "Jacob Warnhalter",
+      name: "Harsh Kanani",
       image:
         "https://images.unsplash.com/photo-1624298357597-fd92dfbec01d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=250&q=80",
     },
   },
   {
     postedAt: "10 days ago",
-    body: "Using their auto finance services was a game-changer for me. The process was seamless, and they guided me through every steps. I would highly recommend them to anyone looking for a car loan.",
+    body: "<p>Embarking on my learning journey with this e-learning platform was nothing short of amazing. The team's professionalism, efficiency, and dedication helped me discover courses perfectly tailored to my curiosity and ambitions.</p>",
+
     author: {
-      name: "Henry Silkeater",
+      name: "Gunjan Moradiya",
+      image:
+        "https://images.unsplash.com/photo-1632922267756-9b71242b1592?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=250&q=80",
+    },
+  },
+  {
+    postedAt: "3 days ago",
+    body: "Exploring the courses on this e-learning platform has been a game-changer for me. The process was seamless, and they guided me through every step of my learning journey. I would highly recommend them to anyone seeking quality education.",
+    author: {
+      name: "Heet lathiya",
       image:
         "https://images.unsplash.com/photo-1632922267756-9b71242b1592?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=250&q=80",
     },
