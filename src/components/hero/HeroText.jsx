@@ -56,16 +56,14 @@ export function HeroText() {
         <Title className={classes.title}>
           Explore Our Range of{" "}
           <Text component='span' className={classes.highlight} inherit>
-            Auto Finance
+           E-Learning Courses
           </Text>{" "}
-          Loans
+    
         </Title>
 
         <Container p={0} size={600}>
           <Text size='lg' color='dimmed' className={classes.description}>
-            Flexible terms and competitive rates for new or used car
-            purchases, refinancing, or private party purchases. Explore our
-            loan options and find the right fit for you.
+            E-learning offers unparalleled flexibility, empowering learners to tailor their educational experience to their unique needs and schedules. With the ability to access course materials anytime, anywhere, students can strike a balance between work, personal commitments, and education, fostering a dynamic and adaptable approach to learning.
           </Text>
         </Container>
       </div>

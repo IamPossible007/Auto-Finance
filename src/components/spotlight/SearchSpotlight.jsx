@@ -15,18 +15,21 @@ function SearchSpotlight({ children }) {
       description: "Get to home page",
       onTrigger: () => navigate("/"),
       icon: <IconHome size='1.2rem' />,
+      key:"home",
     },
     {
-      title: "Get Loans",
-      description: "Know full information about loans",
+      title: "Get to learn",
+      description: "Know full information about programming",
       onTrigger: () => navigate("/loans"),
       icon: <IconDashboard size='1.2rem' />,
+      key: 'learn',
     },
     {
       title: "About us",
       description: "Get to know about our journey",
       onTrigger: () => navigate("/about"),
       icon: <IconFileText size='1.2rem' />,
+      key:"aboutus",
     },
   ];
 

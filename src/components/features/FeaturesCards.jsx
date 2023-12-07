@@ -141,9 +141,7 @@ export function FeaturesCards() {
       </Title>
 
       <Text c='dimmed' className={classes.description} ta='center' mt='md'>
-        Get the best auto finance solutions with our commitment to customer
-        satisfaction. Enjoy flexible payments and outstanding service that
-        sets us apart.
+      At E learning, we are deeply committed to ensuring the utmost satisfaction of our e-learning participants. We strive to consistently deliver high-quality educational content, engaging experiences, and a supportive online environment. Your success and contentment with our e-learning programs are at the forefront of our mission, and we remain dedicated to continuously enhancing our offerings to meet and exceed your expectations. Your educational journey with us is not just a commitment; it's a promise to provide you with an enriching and fulfilling e-learning experience.
       </Text>
 
       <SimpleGrid

@@ -19,6 +19,20 @@ const data = [
     title: "Data Science Essentials",
     category: "Data Science",
   },
+  {
+    image: "cards/image-4.png",
+    title: "Interact With Machines",
+    category: "Machine Learning",
+  },
+  {
+    image: "cards/image-3.png",
+    title: "Human Intelligence",
+    category: "Artificial Intelligence",
+  },  {
+    image: "cards/image-6.png",
+    title: "Networking Security",
+    category: "Internet Of Things",
+  },
 ];
 
 export function CardsCarousel() {

@@ -80,7 +80,7 @@ export function Comments() {
   return (
     <Container size='md' py='xl' shadow='md' radius='lg'>
       <Title align='center' className={classes.title}>
-        What Our Customers Say
+        What Our Learners Say
       </Title>
       {comments.map(({ author, body, postedAt }) => (
         <Paper withBorder radius='md' className={classes.comment}>

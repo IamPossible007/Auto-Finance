@@ -158,7 +158,7 @@ const links = [
     label: "Courses",
   },
   {
-    link: "/login",
+    link: "/login_component",
     label: "Login",
   },
   {

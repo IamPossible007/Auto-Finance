@@ -85,13 +85,11 @@ export function HeroBullets() {
             <Title className={classes.title}>
               Drive Your<span className={classes.highlight}>Dreams</span>{" "}
               <br />
-              with Our Loans
+              with Our courses
             </Title>
             <Text color='dimmed' mt='md'>
-              Rev up your life with our trusted auto finance services. We
-              make it easy to get the money you need to own your dream
-              vehicle, with competitive rates and flexible repayment
-              options.
+              Rev up your life with our trusted online programming services. We
+              make it easy to get the mknowledge about various programming languages along with some other professional courses too.
             </Text>
 
             <List
@@ -105,13 +103,13 @@ export function HeroBullets() {
               }
             >
               <List.Item>
-                <b>Apply online or in-person</b>
+                <b>Apply online </b>
               </List.Item>
               <List.Item>
-                <b>Get your vehicle evaluated</b>
+                <b>Get your course evaluated</b>
               </List.Item>
               <List.Item>
-                <b>Get your loan and keep driving</b>
+                <b>Get your course and keep learning</b>
               </List.Item>
             </List>
 
@@ -122,7 +120,7 @@ export function HeroBullets() {
                 className={classes.control}
                 onClick={() => navigate("/loans")}
               >
-                Instant Loans
+                Instant E-Learning
               </Button>
               <Button
                 variant='default'
@@ -131,7 +129,7 @@ export function HeroBullets() {
                 className={classes.control}
                 onClick={() => navigate("/about")}
               >
-                Enquire now
+                Enroll now
               </Button>
             </Group>
           </div>
